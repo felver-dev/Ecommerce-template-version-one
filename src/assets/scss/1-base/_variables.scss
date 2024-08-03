@@ -1,0 +1,67 @@
+// colors
+$white: #FFFFFF;
+$grey: #B3B5B7;
+$grey--two: #D8D8D8;
+$grey--three: #F8F9F9;
+$grey--four: #6E6E6E;
+$grey--five: #E1E1E1;
+$grey--six: #303030;
+$grey--seven: #F1F1F1;
+$grey--eight: #E6E6E6;
+$grey--nine: #9191A1;
+$grey--ten: #F8F8F8;
+$grey--eleven: #ECECEC;
+$grey--twelve: #AAAAAA;
+$grey--thirteen: #929292;
+$grey--fourteen: #CBCBCB;
+$grey--fifteen: #A8A8A8;
+$grey--sixteen: #C6C6C6;
+$grey--seventeen: #DDDDDD;
+$grey--eighteen: #475993;
+$grey--nineteen: #6B6B6B;
+$red: #D11402;
+$red--two: #D11200;
+$orange: #EE3625;
+$orange--two: #F73C1B;
+$pink: #F93B7C;
+$black: #000000;
+$black--two: #02011E;
+$black--three: #242424;
+$black--four: #06142D;
+$black--five: #111111;
+$black--six: #404740;
+$black--seven: #232323;
+$black--eight: #404040;
+$blue: #4A44F2;
+$blue--two: #EEEEFF;
+$blue--three: #722ADF;
+$brown: #945E38;
+
+// project specific variables
+$theme-color--default: #00C569;
+$theme-color--heading: $black;
+$transition--default: all 0.3s;
+$transition--medium: all 0.6s;
+
+// font family
+$body-font-family: "Roboto", sans-serif;
+$heading-font-family: $body-font-family;
+
+// body text
+$body-text-color: #4E4E4E;
+$body-font-weight: 400;
+$body-line-height: 1.7;
+$body-font-size: 14px;
+
+// heading text
+$heading-font-weight: 500;
+
+// responsive variables
+$extra-large-desktop: "only screen and (min-width: 1500px)";
+$large-desktop: "only screen and (min-width: 1200px) and (max-width: 1499px)";
+$small-desktop: "only screen and (min-width: 992px) and (max-width: 1199px)";
+$extra-large-mobile: "only screen and (min-width: 768px) and (max-width: 991px)";
+$large-mobile: "only screen and (max-width: 767px)";
+$small-mobile: "only screen and (max-width: 575px)";
+$extra-small-mobile: "only screen and (max-width: 479px)";
+$extra-extra-small-mobile: "only screen and (max-width: 400px)";

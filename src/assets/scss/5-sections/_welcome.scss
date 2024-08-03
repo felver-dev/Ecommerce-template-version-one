@@ -1,0 +1,92 @@
+
+/*=============================================
+=            welcome area            =
+=============================================*/
+
+.welcome-slider-wrapper {
+    position: relative;
+    .logo {
+        img {
+            margin: 0 auto;
+        }
+    }
+    .title {
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .text {
+        font-size: 16px;
+
+        color: $black--eight;
+    }
+
+    .welcome-btn {
+        font-size: 16px;
+        line-height: 1;
+
+        display: block;
+
+        width: 140px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        padding: 10px 0;
+
+        color: $white;
+        border-radius: 20px;
+        background-color: $red--two;
+    }
+
+    .skip-btn {
+        color: $grey--nineteen;
+        border: none;
+        background: none;
+    }
+
+    .slick-dots {
+        line-height: 1;
+
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+
+        transform: translateX(-50%);
+        li {
+            display: inline-block;
+
+            margin-right: 10px;
+            &:last-child {
+                margin-right: 0;
+            }
+            &.slick-active {
+                button {
+                    background-color: $red--two;
+                }
+            }
+            button {
+                font-size: 0;
+
+                width: 8px;
+                height: 8px;
+                padding: 0;
+
+                border: none;
+                border-radius: 50%;
+                background: none;
+                background-color: $grey--four;
+            }
+        }
+    }
+}
+
+.single-welcome-slide {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+
+    height: 100vh;
+    padding: 30px 0;
+}
+
+/*=====  End of welcome area  ======*/
+

@@ -1,0 +1,101 @@
+/*=============================================
+=            hero slider            =
+=============================================*/
+
+.hero-slider-wrapper {
+    .swiper-slide-active {
+        .hero-slider-content {
+            > * {
+                &:nth-child(1) {
+                    animation-name: fadeInDown;
+                    animation-duration: 1s;
+                    animation-delay: 0.5s;
+                }
+                &:nth-child(2) {
+                    animation-name: fadeInDown;
+                    animation-duration: 1s;
+                    animation-delay: 1.5s;
+                }
+            }
+        }
+    }
+
+    .swiper-pagination {
+        line-height: 1;
+
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+
+        display: inline-block;
+
+        text-align: left;
+        &-bullet {
+            font-size: 0;
+
+            display: inline-block;
+
+            width: 15px;
+            height: 15px;
+            margin: 0 !important;
+            margin-right: 5px !important;
+            padding: 0;
+
+            opacity: 1;
+            border: 3px solid $grey--two;
+            border-radius: 50%;
+            background: none;
+            background-color: $white;
+
+            &-active {
+                background-color: $orange;
+            }
+
+            &:hover,
+            &:focus {
+                button {
+                    background-color: $orange;
+                }
+            }
+        }
+    }
+}
+
+.hero-slider-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: auto !important;
+    height: 220px;
+    margin: 5px;
+
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba($black, 0.1);
+}
+
+.hero-slider-content {
+    width: 300px;
+    max-width: 100%;
+    & > * {
+        animation-name: fadeOutUp;
+        animation-duration: 1s;
+
+        animation-fill-mode: both;
+    }
+    &__title {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.2;
+
+        color: $black--two;
+    }
+
+    &__text {
+        font-weight: 500;
+
+        color: $black--two;
+    }
+}
+
+/*=====  End of hero slider  ======*/

@@ -1,0 +1,5 @@
+{
+  "name": "hero-slider",
+  "private": true,
+  "main": "./HeroSlider.js"
+}

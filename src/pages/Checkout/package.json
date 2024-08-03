@@ -1,0 +1,5 @@
+{
+  "name": "checkout",
+  "private": true,
+  "main": "./Checkout.js"
+}

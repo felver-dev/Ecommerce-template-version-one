@@ -1,0 +1,222 @@
+/*=============================================
+=            chat            =
+=============================================*/
+
+.chat-wrap {
+    padding: 15px 15px 40px 15px;
+}
+
+/*Chat List*/
+.chat-list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    & li {
+        & .chat {
+            margin-bottom: 25px;
+        }
+        &:nth-child(2n) {
+            & .chat {
+                & .head {
+                    flex-direction: row-reverse;
+                    & h5 {
+                        text-align: right;
+                    }
+                    & span {
+                        margin-right: 0;
+                        margin-left: 15px;
+                    }
+                }
+                & .body {
+                    flex-direction: row-reverse;
+                    .image {
+                        margin-right: 0;
+                        margin-left: 15px;
+                    }
+                    & .content {
+                        margin-right: 15px;
+                        margin-left: 0;
+                        &::before {
+                            right: -10px;
+                            left: auto;
+
+                            border-width: 6px 0 6px 10px;
+                            border-color: transparent transparent transparent $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*Chat*/
+.chat {
+    // Head
+    & .head {
+        position: relative;
+
+        margin-bottom: 5px;
+        & h5 {
+            font-size: 14px;
+            line-height: 18px;
+
+            flex-grow: 1;
+
+            margin: 0;
+
+            text-align: left !important;
+        }
+        & span {
+            font-size: 12px;
+            line-height: 18px;
+
+            margin-right: 20px;
+            margin-bottom: 3px;
+            margin-left: 0 !important;
+        }
+        & a {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+
+            margin-bottom: 3px;
+
+            color: $theme-color--default;
+            & i {
+                font-size: 18px;
+                line-height: 18px;
+
+                display: block;
+            }
+        }
+    }
+    // Body
+    & .body {
+        display: flex;
+        align-items: center;
+        & .image {
+            flex: 1 0 40px;
+            flex-direction: column;
+
+            max-width: 40px;
+            margin-right: 15px;
+            & img {
+                overflow: hidden;
+
+                width: 100%;
+                height: auto;
+
+                border-radius: 50%;
+            }
+        }
+
+        & .content {
+            position: relative;
+
+            margin: 15px 0 0 !important;
+            padding: 15px;
+
+            border-radius: 4px;
+            background-color: $white;
+            box-shadow: 0 0 5px rgba(24, 24, 24, 0.05);
+            &::before {
+                position: absolute;
+                top: 28px;
+                left: -10px;
+
+                display: none;
+
+                content: "";
+
+                border-width: 6px 10px 6px 0;
+                border-style: solid;
+                border-color: transparent $white transparent transparent;
+            }
+            & p {
+                font-size: 13px;
+                line-height: 22px;
+            }
+        }
+    }
+}
+
+/*Chat Submission*/
+.chat-submission {
+    position: fixed;
+    bottom: 85px;
+
+    width: 100%;
+
+    border-top: 1px solid $grey--five;
+    background-color: $white;
+
+    @media #{$extra-extra-small-mobile} {
+        bottom: 60px;
+    }
+    & form {
+        position: relative;
+
+        display: flex;
+        flex: 1 0 100%;
+
+        padding: 10px 120px 10px 15px;
+        & input {
+            line-height: 20px;
+
+            width: 100%;
+            padding: 15px 15px;
+
+            border: none;
+            background-color: transparent;
+        }
+        & .buttons {
+            position: absolute;
+            top: 50%;
+            right: 30px;
+
+            transform: translateY(-50%);
+            .submit,
+            label {
+                width: 40px;
+                height: 40px;
+                padding: 0;
+
+                text-align: center;
+
+                color: $white;
+                border: none;
+                border-radius: 50%;
+                background: none;
+                background-color: $theme-color--default;
+                i,
+                svg {
+                    height: 40px;
+                    margin-right: 3px;
+                }
+            }
+            .file-upload {
+                line-height: 1;
+
+                margin: 0;
+                margin-right: 5px;
+
+                cursor: pointer;
+                & input {
+                    display: none;
+                }
+                & i,
+                svg {
+                    font-size: 15px;
+
+                    height: 36px;
+
+                    transform: rotate(90deg);
+                }
+            }
+        }
+    }
+}
+
+/*=====  End of chat  ======*/

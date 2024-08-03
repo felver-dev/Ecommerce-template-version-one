@@ -1,0 +1,137 @@
+/*=============================================
+=            Spacing            =
+=============================================*/
+
+.space-xy {
+    &--10 {
+        padding: 10px;
+    }
+    &--15 {
+        padding: 15px;
+    }
+}
+
+.space-y {
+    &--10 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    &--15 {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    &--60 {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.space-mt {
+    &--10 {
+        margin-top: 10px;
+    }
+    &--15 {
+        margin-top: 15px;
+    }
+    &--20 {
+        margin-top: 20px;
+    }
+    &--30 {
+        margin-top: 30px;
+    }
+    &--40 {
+        margin-top: 40px;
+    }
+    &--70 {
+        margin-top: 70px;
+    }
+}
+
+.space-mb {
+    &--5 {
+        margin-bottom: 5px;
+    }
+    &--10 {
+        margin-bottom: 10px;
+    }
+    &--15 {
+        margin-bottom: 15px;
+    }
+    &--20 {
+        margin-bottom: 20px;
+    }
+    &--25 {
+        margin-bottom: 25px;
+    }
+    &--30 {
+        margin-bottom: 30px;
+    }
+    &--40 {
+        margin-bottom: 40px;
+    }
+    &--50 {
+        margin-bottom: 50px;
+    }
+    &--70 {
+        margin-bottom: 70px;
+    }
+    &--80 {
+        margin-bottom: 80px;
+    }
+}
+
+.space-mb-m {
+    &--15 {
+        margin-bottom: -15px;
+    }
+    &--20 {
+        margin-bottom: -20px;
+    }
+}
+
+.space-pb {
+    &--15 {
+        padding-bottom: 15px;
+    }
+    &--25 {
+        padding-bottom: 25px;
+    }
+    &--30 {
+        padding-bottom: 30px;
+    }
+    &--50 {
+        padding-bottom: 50px;
+    }
+    &--60 {
+        padding-bottom: 60px;
+    }
+    &--90 {
+        padding-bottom: 90px;
+    }
+    &--120 {
+        padding-bottom: 120px;
+    }
+}
+
+.space-pt {
+    &--15 {
+        padding-top: 15px;
+    }
+    &--25 {
+        padding-top: 25px;
+    }
+    &--30 {
+        padding-top: 30px;
+    }
+    &--60 {
+        padding-top: 60px;
+    }
+    &--70 {
+        padding-top: 70px;
+    }
+    &--100 {
+        padding-top: 100px;
+    }
+}
+
+/*=====  End of Spacing  ======*/

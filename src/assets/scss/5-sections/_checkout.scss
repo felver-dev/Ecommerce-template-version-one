@@ -1,0 +1,188 @@
+
+/*=============================================
+=            checkout            =
+=============================================*/
+
+
+.checkout-form {
+    padding: 40px 20px;
+
+    background-color: $white;
+    &__single-field {
+        label {
+            font-size: 14px;
+
+            margin-bottom: 20px;
+
+            color: $black--two;
+        }
+        input,
+        textarea {
+            font-size: 18px;
+
+            display: block;
+
+            width: 100%;
+            padding-bottom: 10px;
+
+            color: $black--two;
+            border: none;
+            border-bottom: 2px solid $grey--eight;
+
+            &:focus {
+                border-bottom: 2px solid $theme-color--default;
+            }
+        }
+
+        ::placeholder {
+            /* Firefox */
+            opacity: 1;
+
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: $grey--four;
+        }
+
+        :-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: $grey--four;
+        }
+
+        ::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: $grey--four;
+        }
+    }
+
+    &__button {
+        font-size: 16px;
+        line-height: 1;
+
+        width: 100%;
+        padding: 15px 0;
+
+        color: $white;
+        border: none;
+        background: none;
+        background-color: $theme-color--default;
+    }
+}
+
+
+.your-order-area {
+    h3 {
+        font-size: 20px;
+        font-weight: 500;
+
+        margin: 0 0 20px;
+
+        color: $black;
+    }
+    .your-order-wrap {
+        padding: 30px 15px;
+
+        background: $grey--seven;
+
+        .your-order-product-info {
+            .your-order-top {
+                ul {
+                    display: flex;
+                    justify-content: space-between;
+                    li {
+                        font-size: 16px;
+                        font-weight: 500;
+
+                        list-style: outside none none;
+
+                        color: $black;
+                    }
+                }
+            }
+            .your-order-middle {
+                margin: 29px 0;
+                padding: 19px 0 18px;
+
+                border-top: 1px solid $grey--eight;
+                border-bottom: 1px solid $grey--eight;
+                ul {
+                    li {
+                        display: flex;
+                        justify-content: space-between;
+
+                        margin: 0 0 10px;
+                    }
+                }
+            }
+            .your-order-bottom {
+                ul {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    li {
+                        font-size: 14px;
+                        font-weight: 400;
+
+                        list-style: none;
+                    }
+                    li.your-order-shipping {
+                        font-size: 16px;
+                        font-weight: 400;
+
+                        color: $black;
+                    }
+                }
+            }
+            .your-order-total {
+                margin: 18px 0 33px;
+                padding: 17px 0 19px;
+
+                border-top: 1px solid $grey--eight;
+                border-bottom: 1px solid $grey--eight;
+                ul {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    li.order-total {
+                        font-size: 18px;
+                        font-weight: 500;
+
+                        color: $black;
+                    }
+                    li {
+                        font-size: 16px;
+                        font-weight: 500;
+
+                        list-style: outside none none;
+
+                        color: $theme-color--default;
+                    }
+                }
+            }
+        }
+    }
+
+    .place-order > a {
+        font-weight: 500;
+        line-height: 1;
+
+        z-index: 9;
+
+        display: block;
+
+        padding: 18px 20px;
+
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+
+        color: $white;
+        border-radius: 50px;
+        background-color: $theme-color--default;
+        &:hover {
+            background-color: #333;
+        }
+    }
+}
+
+
+/*=====  End of checkout  ======*/
+

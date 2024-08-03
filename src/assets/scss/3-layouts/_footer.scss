@@ -1,0 +1,105 @@
+/*=============================================
+=            Footer            =
+=============================================*/
+
+.footer-nav-wrapper {
+    position: fixed;
+    z-index: 99;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    padding: 0 40px;
+
+    border-radius: 60px;
+    background-color: $white;
+    box-shadow: 0 2px 10px rgba($black, 0.16);
+}
+
+.footer-nav-single {
+    position: relative;
+
+    display: block;
+
+    width: 85px;
+    height: 85px;
+
+    text-align: center;
+
+    border-radius: 50%;
+
+    @media #{$extra-extra-small-mobile} {
+        width: 60px;
+        height: 60px;
+    }
+
+    span {
+        font-size: 12px;
+
+        color: $grey--four;
+    }
+    svg,
+    img {
+        display: block;
+
+        margin: 0 auto;
+        margin-bottom: 5px;
+        @media #{$extra-extra-small-mobile} {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .menu-wrapper {
+        line-height: 1;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+    }
+
+    &:before {
+        position: absolute;
+        z-index: -1;
+        top: -5px;
+        left: -5px;
+
+        visibility: hidden;
+
+        width: calc(100% + 10px);
+        height: calc(100% + 10px);
+
+        content: "";
+
+        opacity: 0;
+        border-radius: 50%;
+        background-color: $white;
+    }
+
+    &:hover,
+    &.active {
+        background-color: $blue;
+
+        span {
+            color: $white;
+        }
+        svg {
+            * {
+                stroke: $white;
+            }
+        }
+
+        &:before {
+            visibility: visible;
+
+            opacity: 1;
+        }
+    }
+}
+
+/*=====  End of Footer ======*/

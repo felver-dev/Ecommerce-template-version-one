@@ -1,0 +1,5 @@
+{
+  "name": "wishlist",
+  "private": true,
+  "main": "./Wishlist.js"
+}

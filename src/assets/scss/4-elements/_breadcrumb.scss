@@ -1,0 +1,22 @@
+
+/*=============================================
+=            breadcrumb            =
+=============================================*/
+
+.breadcrumb-area {
+    .page-title {
+        font-size: 14px;
+    }
+    .back-link {
+        font-weight: 500;
+
+        color: $black;
+        i {
+            margin-right: 3px;
+        }
+    }
+}
+
+
+/*=====  End of breadcrumb  ======*/
+

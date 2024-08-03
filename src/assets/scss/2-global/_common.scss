@@ -1,0 +1,38 @@
+/*=============================================
+=            Common            =
+=============================================*/
+
+.bg-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.border-bottom {
+    border-bottom: 1px solid $grey--seven !important;
+    &--medium {
+        border-bottom: 2px solid $grey--seven !important;
+    }
+    &--thick {
+        border-bottom: 3px solid $grey--seven !important;
+    }
+}
+
+.body-wrapper {
+    &.active-overlay {
+        overflow: hidden;
+        &:before {
+            position: fixed;
+            z-index: 999;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+
+            content: "";
+
+            background: transparent;
+        }
+    }
+}
+
+/*=====  End of Common  ======*/

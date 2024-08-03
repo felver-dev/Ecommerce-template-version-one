@@ -1,0 +1,229 @@
+/*=============================================
+=            cart            =
+=============================================*/
+
+.cart-plus-minus {
+    position: relative;
+
+    display: inline-block;
+
+    width: 90px;
+    height: 30px;
+    padding: 0;
+    .qtybutton {
+        font-size: 16px;
+        line-height: 30px;
+
+        position: absolute;
+
+        float: inherit;
+
+        width: 20px;
+        margin: 0;
+
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        text-align: center;
+
+        color: $black--five;
+        border: none;
+        background: none;
+    }
+    .dec.qtybutton {
+        top: 0;
+        left: 0;
+
+        height: 30px;
+
+        border-right: 1px solid $grey--eight;
+    }
+    .inc.qtybutton {
+        top: 0;
+        right: 0;
+
+        height: 30px;
+
+        border-left: 1px solid $grey--eight;
+    }
+    input.cart-plus-minus-box {
+        font-size: 14px;
+
+        float: left;
+
+        width: 90px;
+        height: 30px;
+        margin: 0;
+        padding: 0;
+
+        text-align: center;
+
+        color: $black--five;
+        border: 1px solid $grey--eight;
+        background: transparent none repeat scroll 0 0;
+    }
+}
+
+.discount-code-wrapper {
+    padding: 30px 0;
+
+    border-top: 1px solid $grey--seven;
+    border-bottom: 1px solid $grey--seven;
+    border-radius: 5px;
+
+    .title-wrap {
+        position: relative;
+        &::before {
+            position: absolute;
+            z-index: 1;
+            top: 10px;
+            left: 0;
+
+            width: 100%;
+            height: 1px;
+
+            content: "";
+            transition: all 0.4s ease 0s;
+        }
+        h4.cart-bottom-title {
+            font-size: 18px;
+            font-weight: 500;
+
+            display: inline-block;
+
+            margin: 0;
+            padding-right: 18px;
+        }
+    }
+
+    .discount-code {
+        margin: 21px 0 0;
+        p {
+            margin: 0 0 15px;
+        }
+        form {
+            input {
+                width: 100%;
+                height: 40px;
+                margin-bottom: 10px;
+                padding-left: 10px;
+
+                border: 1px solid $grey--seven;
+            }
+            button.cart-btn-2 {
+                font-size: 14px;
+                font-weight: 500;
+
+                padding: 13px 30px 12px;
+
+                cursor: pointer;
+                transition: all 0.3s ease 0s;
+                text-transform: uppercase;
+
+                color: $white;
+                border: medium none;
+                background-color: $theme-color--default;
+            }
+        }
+    }
+}
+
+.grand-total {
+    padding: 30px 0;
+
+    border-top: 1px solid $grey--seven;
+    border-bottom: 1px solid $grey--seven;
+
+    .title-wrap {
+        position: relative;
+        &::before {
+            position: absolute;
+            z-index: 1;
+            top: 10px;
+            left: 0;
+
+            width: 100%;
+            height: 1px;
+
+            content: "";
+            transition: all 0.4s ease 0s;
+        }
+        h4.cart-bottom-title {
+            font-size: 18px;
+            font-weight: 500;
+
+            display: inline-block;
+
+            margin: 0;
+            padding-right: 18px;
+        }
+        .section-bg-gary-cart {
+            position: relative;
+            z-index: 9;
+        }
+    }
+    h5 {
+        font-size: 14px;
+
+        margin: 36px 0 27px;
+        span {
+            font-size: 18px;
+            font-weight: 500;
+
+            float: right;
+        }
+    }
+    .total-shipping {
+        margin: 0 0 27px;
+        padding: 28px 0;
+
+        border-top: 1px solid $grey--seven;
+        border-bottom: 1px solid $grey--seven;
+        h5 {
+            font-size: 14px;
+
+            margin: 0;
+        }
+        ul {
+            padding: 19px 0 0 0;
+            li {
+                margin: 0 0 6px;
+
+                list-style: outside none none;
+
+                &:last-child {
+                    margin: 0 0 0;
+                }
+
+                span {
+                    float: right;
+                }
+            }
+        }
+    }
+    h4.grand-total-title {
+        font-size: 20px;
+        font-weight: 500;
+
+        margin: 0 0 25px;
+
+        span {
+            float: right;
+        }
+    }
+    a {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1;
+
+        display: block;
+
+        padding: 18px 10px 17px;
+
+        text-align: center;
+        text-transform: uppercase;
+
+        color: $white;
+        background-color: $theme-color--default;
+    }
+}
+/*=====  End of cart  ======*/

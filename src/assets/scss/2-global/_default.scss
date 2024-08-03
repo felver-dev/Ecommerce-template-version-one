@@ -1,0 +1,117 @@
+/*=============================================
+=            Default            =
+=============================================*/
+
+/*-- Google Font --*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap");
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: $body-font-family;
+    font-size: $body-font-size;
+    font-weight: $body-font-weight;
+    line-height: $body-line-height;
+
+    color: $body-text-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $heading-font-family;
+    font-weight: $heading-font-weight;
+    line-height: 1;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    color: $theme-color--heading;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+a,
+button {
+    line-height: inherit;
+
+    display: inline-block;
+
+    cursor: pointer;
+    transition: $transition--default;
+    text-decoration: none;
+
+    color: inherit;
+    &:focus {
+        outline: none;
+    }
+}
+*:focus {
+    outline: none;
+}
+a:focus {
+    text-decoration: none;
+
+    color: inherit;
+    outline: none;
+}
+a:hover {
+    text-decoration: none;
+
+    color: $theme-color--default;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: outside none none;
+}
+
+select {
+    padding-right: 15px;
+
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' height='10px' width='15px'%3E%3Ctext x='0' y='10' fill='black'%3E%E2%96%BE%3C/text%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+
+    -webkit-appearance: none;
+       -moz-appearance: none;
+}
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+input:focus:-moz-placeholder,
+textarea:focus:-moz-placeholder {
+    color: transparent;
+} /* FF 4-18 */
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+    color: transparent;
+} /* FF 19+ */
+input:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder {
+    color: transparent;
+} /* IE 10+ */
+
+/*=====  End of Default  ======*/

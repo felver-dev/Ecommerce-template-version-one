@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "Most popular <br> Hand Bag",
+    "subtitle": "GET 30% OFF",
+    "image": "/assets/img/hero-slider/slider-1.jpg"
+  },
+
+  {
+    "id": 2,
+    "title": "Most popular <br> Casual Bag",
+    "subtitle": "GET 40% OFF",
+    "image": "/assets/img/hero-slider/slider-2.jpg"
+  },
+
+  {
+    "id": 3,
+    "title": "Most popular <br> Travel Bag",
+    "subtitle": "GET 50% OFF",
+    "image": "/assets/img/hero-slider/slider-3.jpg"
+  }
+]

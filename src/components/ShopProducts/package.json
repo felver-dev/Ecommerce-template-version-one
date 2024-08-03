@@ -1,0 +1,5 @@
+{
+  "name": "shop-products",
+  "private": true,
+  "main": "./ShopProducts.js"
+}

@@ -1,0 +1,5 @@
+{
+  "name": "default-layout",
+  "private": true,
+  "main": "./DefaultLayout.js"
+}

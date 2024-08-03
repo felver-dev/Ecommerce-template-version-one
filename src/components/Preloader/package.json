@@ -1,0 +1,5 @@
+{
+  "name": "preloader",
+  "private": true,
+  "main": "./Preloader.js"
+}

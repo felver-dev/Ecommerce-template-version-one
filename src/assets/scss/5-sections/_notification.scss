@@ -1,0 +1,42 @@
+
+/*=============================================
+=            notification            =
+=============================================*/
+
+.notification-item {
+    padding: 20px 15px;
+
+    border-bottom: 1px solid $grey--two;
+    &__content {
+        margin-bottom: 10px;
+        .highlight {
+            font-weight: 700;
+
+            color: $black;
+        }
+    }
+    &__time {
+        font-size: 12px;
+        line-height: 1;
+
+        position: relative;
+
+        padding-left: 15px;
+
+        vertical-align: middle;
+        span {
+            position: absolute;
+            top: 50%;
+            left: 0;
+
+            transform: translateY(-50%);
+        }
+    }
+
+    &--unread {
+        background-color: $blue--two;
+    }
+}
+
+/*=====  End of notification  ======*/
+

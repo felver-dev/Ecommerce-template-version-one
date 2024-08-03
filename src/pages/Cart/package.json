@@ -1,0 +1,5 @@
+{
+  "name": "cart",
+  "private": true,
+  "main": "./Cart.js"
+}

@@ -1,0 +1,61 @@
+/*=============================================
+=            preloader            =
+=============================================*/
+
+.preloader-active {
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    left: 0;
+
+    overflow: hidden;
+
+    width: 100vw;
+    height: 100vh;
+    .preloader-area-wrap {
+        position: absolute;
+        z-index: 999999;
+        top: 0;
+        left: 0;
+
+        display: block;
+
+        width: 100%;
+        height: 100%;
+
+        background-color: $white;
+
+        .img-loader {
+            position: absolute;
+            z-index: 2;
+            top: calc(50% - 15px);
+            left: calc(50% - 15px);
+
+            display: block;
+
+            width: 30px;
+            height: 30px;
+
+            transition: $transition--default;
+            animation: rotate-center 0.6s linear infinite both;
+
+            border-width: 3px;
+            border-style: solid;
+            border-color: $theme-color--default $theme-color--default
+            $theme-color--default transparent;
+            border-radius: 50%;
+        }
+    }
+}
+
+@keyframes rotate-center {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*=====  End of preloader  ======*/
